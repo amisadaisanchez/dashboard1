@@ -49,8 +49,8 @@ with tgb.Page() as page:
 
 if __name__=="__main__":
    Gui(page).run(
-       host="127.0.0.1",
-       port= 8,
+       host="0.0.0.0",
+       port= 10000,
        title="Schools dashboard",
        use_reloader=False,
        debug=False,
