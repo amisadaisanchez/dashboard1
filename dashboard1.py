@@ -8,6 +8,16 @@ from pathlib import Path
 import pandas as pd
 from taipy.gui import Gui
 import taipy.gui.builder as tgb
+# importing os module for environment variables
+import os
+# importing necessary functions from dotenv library
+from dotenv import load_dotenv, dotenv_values
+# loading variables from .env file
+load_dotenv()
+
+# accessing and printing value
+print(os.getenv("MY_KEY"))
+print(os.getenv("PYTHON_VERSION"))
 
 this_dir = Path.cwd()
 wb_file_path = this_dir / 'schools_dash_6-9-25.xlsx'
